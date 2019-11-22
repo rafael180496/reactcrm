@@ -1,0 +1,5 @@
+#intalacion del router
+
+npm install --save react-router-dom
+npm install --uninstall bootstrap reactstrap
+npm install --save material-icons

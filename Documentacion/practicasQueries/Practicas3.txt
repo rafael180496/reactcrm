@@ -1,0 +1,44 @@
+Paginacion
+
+# Welcome to GraphQLHub! Type your GraphQL query here, or
+# explore the "Docs" to the right
+#offset numero de pagina
+#limit cantidad de registro
+query{
+ hn{
+  	topStories(limit:10,offset:1){
+    id
+    url
+  }
+ }
+}
+
+Queries con nombre
+
+query BusquedaTOp{
+ hn{
+  	topStories(limit:10,offset:1){
+    id
+    url
+  }
+ }
+}
+
+Variables a alas queries
+
+
+
+query BusquedaTOP($Limit:Int!,$pagination:Int!){
+ hn{
+  	topStories(limit:$Limit,offset:$pagination){
+    id
+    url
+  }
+ }
+}
+
+query Variables
+{
+  "Limit": 10,
+  "pagination": 0
+}

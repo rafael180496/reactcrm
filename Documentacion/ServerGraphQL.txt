@@ -1,0 +1,13 @@
+#Dependencia de graphql  para express
+npm install --save express-graphql
+npm install --save graphql
+
+
+#Agregando import para archivos graphql
+npm install --save graphql-tools
+npm install --save graphql-import
+
+
+#Utilizando mongoose
+
+npm install --save mongoose

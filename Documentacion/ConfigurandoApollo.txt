@@ -1,0 +1,28 @@
+#Que es apollo?
+Realiza consulta a datos Graphql o cualquier tecnologia
+
+-api para realizar quieres
+-chachea los datos
+-Apollo Client y Apollo Server
+
+
+#Crear Servidor
+#Apollo Server
+npm install --save apollo-server-express
+or
+normal sin usar express
+npm install --save apollo-server
+
+#Crear Cliente con React
+
+npm install -g create-react-app
+creat-react-app proyect-name
+cd proyect-name
+npm install --save apollo-boost
+npm install --save react-apollo
+npm install --save graphql
+npm install --save graphql-tag
+or
+npm install --save apollo-boost react-apollo graphql graphql-tag
+
+sudo chmod -R 777 proyect-name/

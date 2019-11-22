@@ -1,0 +1,22 @@
+Mutation
+
+mutation nuevoComentario($input:SetValueForKeyInput!){
+  keyValue_setValue(input:$input){
+    clientMutationId
+    item{
+      id
+      value
+    }
+  }
+}
+
+variables
+
+{
+  "input": {
+
+    "id": "sdsdsadasfaf4654664654654"
+    "value": "Hola amigos"
+    "clientMutationId": dasdasdasdasdasdsadasd
+  }
+}

@@ -1,0 +1,66 @@
+*Documentacion GraphQL
+
+Trabaja con esquemas
+
+
+Documentacion:
+https://graphql.org/learn/queries/#arguments
+
+
+#Terminologias
+-query:
+/nos permite leer los registros
+/Extrae la informacion que ya existe
+/Equivale a un Select
+/Son query universales
+
+Ejemplo
+    query{
+        obtenerProductos{
+            id
+            nombre
+            precio
+            stock
+        }
+    }
+
+
+-resolvers
+
+Pueden estar escrito en cualquier lenguaje alado del servicio
+y depende de la tecnologia la implementacion
+
+-mutation
+
+se utilizar para actulizar eliminar o crear
+es similar a un put y a un post o delete
+son independiente del lenguaje
+
+
+Ejemplo:
+
+mutation eliminarProducto($id:ID){
+    eliminarProducto(id:$id)
+}
+
+-schema
+
+es lo que describe tus tipos de objeto,queries y datos de tu aplicacion.
+El schema en graphql utliza un typing en el que le define si un  campo sera de tipo string int boolean u otro
+
+
+Ejemplo
+debe de ser similar o igual ala basse de datos
+
+type Cliente {
+    id:ID
+    nombre: String
+    apellido: String
+    empresa:String
+    email: [Email]
+    edad :Int
+}
+
+type Email {
+    email: String
+}

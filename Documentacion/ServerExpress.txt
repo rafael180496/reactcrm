@@ -1,0 +1,14 @@
+Creacion de servidor express
+
+npm init
+#cambios del servidor en vivo
+npm install --save nodemon
+#Creacion de api
+npm install --save express
+
+#Dependencia de desarrollo
+#Nuevos componentes ECMA
+npm install --save-dev babel-cli
+npm install --save-dev babel-preset-env
+npm install --save-dev babel-preset-stage-0
+

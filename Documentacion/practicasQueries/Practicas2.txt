@@ -1,0 +1,73 @@
+Argumentos Obligatorios
+
+
+
+# We'll get you started with a simple query showing your username!
+query {
+	repository(name:"fonts",owner:"google"){
+    id
+  }
+}
+
+Alias:
+# Welcome to GraphQLHub! Type your GraphQL query here, or
+# explore the "Docs" to the right
+query{
+  twitter{
+    React:  search(q:"Reacjs"){
+      text
+      id
+      created_at
+      retweet_count
+    }
+    PEPEData: search(q:"RePEPE"){
+      text
+      id
+      created_at
+      retweet_count
+    }
+  }
+}
+
+Fragments:
+
+# Welcome to GraphQLHub! Type your GraphQL query here, or
+# explore the "Docs" to the right
+query{
+  twitter{
+    React:  search(q:"Reacjs"){
+      ...CamposTwi
+    }
+    PEPEData: search(q:"RePEPE"){
+     ...CamposTwi
+    }
+  }
+}
+
+fragment CamposTwi on Tweet{
+  	  text
+      id
+      created_at
+      retweet_count
+      user {
+        id
+        description
+      }
+}
+
+Conexiones en GraphQL: Son relaciones que tienen las tablas
+
+query {
+	viewer{
+    id
+    name
+    repositories(last:5){
+      edges{
+         node{
+          id
+          name
+        }
+      }
+    }
+  }
+}

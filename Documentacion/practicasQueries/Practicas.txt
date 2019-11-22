@@ -1,0 +1,48 @@
+URLS
+https://www.graphqlhub.com/playground?query=%23%20Welcome%20to%20GraphQLHub!%20Type%20your%20GraphQL%20query%20here%2C%20or%0A%23%20explore%20the%20%22Docs%22%20to%20the%20right%0Aquery%7B%0A%20%20hn%7B%0A%20%20%20%20topStories(limit%3A5)%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20type%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D
+https://developer.github.com/v4/explorer/
+
+Ejemplos:
+query {
+  viewer {
+    name
+    company
+    createdAt
+    avatarUrl
+    id
+  }
+}
+
+# Welcome to GraphQLHub! Type your GraphQL query here, or
+# explore the "Docs" to the right
+query{
+  twitter{
+    search(q: "Rafael Hidalgo"){
+      text
+      retweet_count
+    }
+  }
+}
+
+
+Argumentos:
+query {
+  repositoryOwner(login:"rafael180496")
+  {
+    id
+    url
+    resourcePath
+  }
+}
+
+
+# Welcome to GraphQLHub! Type your GraphQL query here, or
+# explore the "Docs" to the right
+query{
+  hn{
+    topStories(limit:5){
+      id
+      type
+    }
+  }
+}
